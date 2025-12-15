@@ -87,74 +87,74 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+      <footer className="bg-background text-foreground pt-16 pb-8 border-t border-border">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-8 h-8 bg-primary rounded flex items-center justify-center text-white font-bold text-lg">
                   M
                 </div>
-                <span className="text-lg font-bold font-heading">MWIMA Consulting</span>
+                <span className="text-lg font-bold font-heading text-primary">MWIMA Consulting</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 Empowering organizations across Africa with strategic insights, robust research, and sustainable development solutions.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-muted-foreground">
                   <Linkedin className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-muted-foreground">
                   <Twitter className="h-5 w-5" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-muted-foreground">
                   <Facebook className="h-5 w-5" />
                 </a>
               </div>
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-6 text-white">Services</h4>
-              <ul className="space-y-3 text-sm text-primary-foreground/70">
-                <li><Link href="/services" className="hover:text-secondary transition-colors">Research & Analysis</Link></li>
-                <li><Link href="/services" className="hover:text-secondary transition-colors">Design Strategy</Link></li>
-                <li><Link href="/services" className="hover:text-secondary transition-colors">Monitoring & Evaluation</Link></li>
-                <li><Link href="/services" className="hover:text-secondary transition-colors">Capacity Building</Link></li>
-                <li><Link href="/services" className="hover:text-secondary transition-colors">Facilitation</Link></li>
+              <h4 className="font-bold text-lg mb-6 text-primary">Services</h4>
+              <ul className="space-y-3 text-sm text-muted-foreground">
+                <li><Link href="/services" className="hover:text-primary transition-colors">Research & Analysis</Link></li>
+                <li><Link href="/services" className="hover:text-primary transition-colors">Design Strategy</Link></li>
+                <li><Link href="/services" className="hover:text-primary transition-colors">Monitoring & Evaluation</Link></li>
+                <li><Link href="/services" className="hover:text-primary transition-colors">Capacity Building</Link></li>
+                <li><Link href="/services" className="hover:text-primary transition-colors">Facilitation</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
-              <ul className="space-y-3 text-sm text-primary-foreground/70">
-                <li><Link href="/" className="hover:text-secondary transition-colors">About Us</Link></li>
-                <li><Link href="/case-studies" className="hover:text-secondary transition-colors">Case Studies</Link></li>
-                <li><Link href="/contact" className="hover:text-secondary transition-colors">Careers</Link></li>
-                <li><Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
-                <li><Link href="/" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
+              <h4 className="font-bold text-lg mb-6 text-primary">Company</h4>
+              <ul className="space-y-3 text-sm text-muted-foreground">
+                <li><Link href="/" className="hover:text-primary transition-colors">About Us</Link></li>
+                <li><Link href="/case-studies" className="hover:text-primary transition-colors">Case Studies</Link></li>
+                <li><Link href="/contact" className="hover:text-primary transition-colors">Careers</Link></li>
+                <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+                <li><Link href="/" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-6 text-white">Contact Us</h4>
-              <ul className="space-y-4 text-sm text-primary-foreground/70">
+              <h4 className="font-bold text-lg mb-6 text-primary">Contact Us</h4>
+              <ul className="space-y-4 text-sm text-muted-foreground">
                 <li className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-secondary shrink-0" />
+                  <MapPin className="h-5 w-5 text-primary shrink-0" />
                   <span>123 Innovation Drive,<br/>Nairobi, Kenya</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-secondary shrink-0" />
-                  <a href="mailto:info@mwimaconsulting.com" className="hover:text-white">info@mwimaconsulting.com</a>
+                  <Mail className="h-5 w-5 text-primary shrink-0" />
+                  <a href="mailto:info@mwimaconsulting.com" className="hover:text-primary">info@mwimaconsulting.com</a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-secondary shrink-0" />
-                  <a href="tel:+254123456789" className="hover:text-white">+254 123 456 789</a>
+                  <Phone className="h-5 w-5 text-primary shrink-0" />
+                  <a href="tel:+254123456789" className="hover:text-primary">+254 123 456 789</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-white/10 text-center text-sm text-primary-foreground/50">
+          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} MWIMA Consulting. All rights reserved.
           </div>
         </div>

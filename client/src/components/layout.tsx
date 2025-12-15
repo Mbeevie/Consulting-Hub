@@ -1,0 +1,164 @@
+import { Link, useLocation } from "wouter";
+import { useState } from "react";
+import { Menu, X, Facebook, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+export function Layout({ children }: { children: React.ReactNode }) {
+  const [location] = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/services", label: "Services" },
+    { href: "/case-studies", label: "Case Studies" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col font-sans">
+      {/* Navigation */}
+      <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:bg-primary/90 transition-colors">
+              M
+            </div>
+            <span className="text-xl font-bold text-primary font-heading tracking-tight">
+              MWIMA <span className="font-normal text-muted-foreground">Consulting</span>
+            </span>
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link 
+                key={link.href} 
+                href={link.href}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location === link.href ? "text-primary font-semibold" : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link href="/contact">
+              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold rounded-full px-6 cursor-pointer">
+                Get in Touch
+              </Button>
+            </Link>
+          </nav>
+
+          {/* Mobile Nav */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <nav className="flex flex-col gap-6 mt-10">
+                {navLinks.map((link) => (
+                  <Link 
+                    key={link.href} 
+                    href={link.href}
+                    className={`text-lg font-medium transition-colors hover:text-primary ${
+                      location === link.href ? "text-primary" : "text-muted-foreground"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link href="/contact">
+                  <Button className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold mt-4">
+                    Get in Touch
+                  </Button>
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1">
+        {children}
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-1">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center text-white font-bold text-lg">
+                  M
+                </div>
+                <span className="text-lg font-bold font-heading">MWIMA Consulting</span>
+              </div>
+              <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
+                Empowering organizations across Africa with strategic insights, robust research, and sustainable development solutions.
+              </p>
+              <div className="flex gap-4">
+                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                  <Twitter className="h-5 w-5" />
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6 text-white">Services</h4>
+              <ul className="space-y-3 text-sm text-primary-foreground/70">
+                <li><Link href="/services" className="hover:text-secondary transition-colors">Research & Analysis</Link></li>
+                <li><Link href="/services" className="hover:text-secondary transition-colors">Design Strategy</Link></li>
+                <li><Link href="/services" className="hover:text-secondary transition-colors">Monitoring & Evaluation</Link></li>
+                <li><Link href="/services" className="hover:text-secondary transition-colors">Capacity Building</Link></li>
+                <li><Link href="/services" className="hover:text-secondary transition-colors">Facilitation</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
+              <ul className="space-y-3 text-sm text-primary-foreground/70">
+                <li><Link href="/" className="hover:text-secondary transition-colors">About Us</Link></li>
+                <li><Link href="/case-studies" className="hover:text-secondary transition-colors">Case Studies</Link></li>
+                <li><Link href="/contact" className="hover:text-secondary transition-colors">Careers</Link></li>
+                <li><Link href="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
+                <li><Link href="/" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-lg mb-6 text-white">Contact Us</h4>
+              <ul className="space-y-4 text-sm text-primary-foreground/70">
+                <li className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-secondary shrink-0" />
+                  <span>123 Innovation Drive,<br/>Nairobi, Kenya</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-secondary shrink-0" />
+                  <a href="mailto:info@mwimaconsulting.com" className="hover:text-white">info@mwimaconsulting.com</a>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-secondary shrink-0" />
+                  <a href="tel:+254123456789" className="hover:text-white">+254 123 456 789</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="pt-8 border-t border-white/10 text-center text-sm text-primary-foreground/50">
+            &copy; {new Date().getFullYear()} MWIMA Consulting. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

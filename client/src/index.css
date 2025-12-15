@@ -38,43 +38,44 @@
 }
 
 :root {
-  /* Primary Teal: #2FB7A3 -> 171 59% 45% */
-  --primary: 171 59% 45%;
+  /* Primary: #2EC4A6 -> 168 62% 47% */
+  --primary: 168 62% 47%;
   --primary-foreground: 0 0% 100%;
 
-  /* Teal Light: #5FD6C6 -> 172 59% 61% (Used for Secondary) */
-  --secondary: 172 59% 61%;
-  --secondary-foreground: 210 24% 16%; /* Dark text on light teal */
+  /* Primary Dark: #0F6F5C -> 168 76% 25% */
+  /* Using as Secondary/Accent for contrast */
+  --secondary: 168 76% 25%;
+  --secondary-foreground: 0 0% 100%;
 
-  /* Bg Main: #FFFFFF -> 0 0% 100% */
-  --background: 0 0% 100%;
+  /* Background: #E9F7F3 -> 163 41% 94% */
+  --background: 163 41% 94%;
   
-  /* Text Heading: #1F2933 -> 210 24% 16% */
-  --foreground: 210 24% 16%;
+  /* Text Primary: #1F1F1F -> 0 0% 12% */
+  --foreground: 0 0% 12%;
   
-  /* Bg Card: #F4F7F6 -> 160 14% 96% */
-  --card: 160 14% 96%;
-  /* Text Body: #4B5563 -> 215 14% 34% (Used for Card Foreground mostly) */
-  --card-foreground: 215 14% 34%;
+  /* Surface/Card: #FFFFFF -> 0 0% 100% */
+  --card: 0 0% 100%;
+  
+  /* Text Secondary: #5F6F6A -> 162 8% 40% */
+  --card-foreground: 162 8% 40%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 210 24% 16%;
+  --popover-foreground: 0 0% 12%;
   
-  /* Bg Card / Tag Bg: #E6F6F3 -> 169 50% 93% (Used for Muted/Accent backgrounds) */
-  --muted: 169 50% 93%;
-  /* Text Muted: #6B7280 -> 220 9% 46% */
-  --muted-foreground: 220 9% 46%;
+  /* Muted backgrounds using slightly darker/lighter variants of base colors */
+  --muted: 163 20% 90%;
+  --muted-foreground: 162 8% 40%;
   
-  --accent: 169 50% 93%;
-  --accent-foreground: 171 59% 45%; /* Primary teal on accent bg */
+  --accent: 163 41% 90%; /* Slightly darker than background */
+  --accent-foreground: 168 76% 25%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  /* Border: #E5E7EB (Generic light gray) or matching muted */
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-  --ring: 171 59% 45%;
+  /* Borders: Light grey-green or Text Secondary with low opacity */
+  --border: 162 8% 85%;
+  --input: 162 8% 85%;
+  --ring: 168 62% 47%;
 }
 
 @layer base {
@@ -88,6 +89,6 @@
     @apply font-heading tracking-tight text-[hsl(var(--foreground))];
   }
   p {
-    @apply text-[hsl(var(--card-foreground))]; /* Mapping body text color */
+    @apply text-[hsl(var(--card-foreground))];
   }
 }

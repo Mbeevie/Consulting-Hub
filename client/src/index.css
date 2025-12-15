@@ -38,36 +38,43 @@
 }
 
 :root {
-  /* Navy Blue Primary */
-  --primary: 215 45% 25%;
+  /* Brand Primary: #3BBF9A -> 163 53% 49% */
+  --primary: 163 53% 49%;
   --primary-foreground: 0 0% 100%;
 
-  /* Gold/Mustard Secondary */
-  --secondary: 42 65% 55%;
-  --secondary-foreground: 215 45% 15%;
+  /* Brand Primary Soft: #8FE3C9 -> 162 62% 73% */
+  /* Using as Secondary/Accent */
+  --secondary: 162 62% 73%;
+  --secondary-foreground: 163 51% 37%; /* #2F8F73 Brand Primary Dark */
 
-  /* Light Grays/Whites */
-  --background: 0 0% 100%;
-  --foreground: 215 25% 15%;
+  /* Bg Main: #F7FBFA -> 165 33% 98% */
+  --background: 165 33% 98%;
   
+  /* Text Primary: #3A3A3A -> 0 0% 23% */
+  --foreground: 0 0% 23%;
+  
+  /* Card: White to stand out on F7FBFA */
   --card: 0 0% 100%;
-  --card-foreground: 215 25% 15%;
+  --card-foreground: 0 0% 23%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 215 25% 15%;
+  --popover-foreground: 0 0% 23%;
   
-  --muted: 210 20% 96%;
-  --muted-foreground: 215 15% 45%;
+  /* Bg Pattern/Muted: #D9F1EA -> 163 46% 90% */
+  --muted: 163 46% 90%;
+  /* Text Secondary: #6B6B6B -> 0 0% 42% */
+  --muted-foreground: 0 0% 42%;
   
-  --accent: 210 20% 96%;
-  --accent-foreground: 215 45% 25%;
+  --accent: 163 46% 90%;
+  --accent-foreground: 163 51% 37%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 214 20% 90%;
-  --input: 214 20% 90%;
-  --ring: 215 45% 25%;
+  /* Border: using Brand Primary Soft or Pattern */
+  --border: 163 46% 80%; /* Slightly darker than pattern for visibility */
+  --input: 163 46% 80%;
+  --ring: 163 53% 49%;
 }
 
 @layer base {

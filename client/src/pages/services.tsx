@@ -116,18 +116,18 @@ export default function Services() {
       </div>
 
       {/* CTA */}
-      <div className="container mx-auto px-4 py-20 text-center">
-        <div className="bg-primary rounded-3xl p-12 md:p-16 text-white relative overflow-hidden">
+      <div className="container mx-auto px-4 py-20 text-center border-t border-border">
+        <div className="bg-background rounded-3xl p-8 md:p-12 text-foreground relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Need a tailored solution?</h2>
-            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6 text-primary">Need a tailored solution?</h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               We understand that every project is unique. Contact us to discuss your specific requirements.
             </p>
             <Link 
               href="/contact" 
               className={cn(
                 buttonVariants({ size: "lg" }), 
-                "bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold rounded-full px-8 hover:no-underline"
+                "bg-primary text-primary-foreground hover:bg-primary/90 font-bold rounded-full px-8 hover:no-underline"
               )}
             >
               Get a Quote

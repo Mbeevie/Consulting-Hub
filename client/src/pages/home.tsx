@@ -149,18 +149,17 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-1/4" />
+      <section className="py-24 bg-background text-foreground relative overflow-hidden border-t border-border">
         <div className="container mx-auto px-4 relative z-10 text-center max-w-3xl">
-          <h2 className="text-4xl font-bold font-heading mb-6">Ready to maximize your impact?</h2>
-          <p className="text-xl text-white/80 mb-10">
+          <h2 className="text-4xl font-bold font-heading mb-6 text-primary">Ready to maximize your impact?</h2>
+          <p className="text-xl text-muted-foreground mb-10">
             Let's discuss how our expertise can support your organization's goals and sustainable development objectives.
           </p>
           <Link 
             href="/contact" 
             className={cn(
               buttonVariants({ size: "lg" }), 
-              "bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold rounded-full h-14 px-10 text-lg shadow-xl hover:shadow-2xl transition-all hover:no-underline"
+              "bg-primary text-primary-foreground hover:bg-primary/90 font-bold rounded-full h-14 px-10 text-lg shadow-lg hover:shadow-xl transition-all hover:no-underline"
             )}
           >
             Start a Conversation

@@ -38,46 +38,43 @@
 }
 
 :root {
-  /* Simple Corporate Palette */
-  
-  /* Primary: Deep Navy #0F172A */
-  --primary: 222 47% 11%;
-  --primary-foreground: 210 40% 98%;
+  /* Primary Green (Brand / CTA): #2EC4A6 -> 168 62% 47% */
+  --primary: 168 62% 47%;
+  --primary-foreground: 0 0% 100%;
 
-  /* Secondary: Corporate Blue #3B82F6 (Standard Blue) used for accents/highlights */
-  /* Or maybe a more muted Slate for secondary elements to keep it "simple" */
-  --secondary: 210 40% 96.1%; /* Slate 100 - Light background for secondary buttons */
-  --secondary-foreground: 222 47% 11%;
+  /* Dark Green (Brand Text / Logo): #0F6F5C -> 168 76% 25% */
+  /* Using as Secondary so we can reference it easily */
+  --secondary: 168 76% 25%;
+  --secondary-foreground: 0 0% 100%;
 
-  /* Background: White */
-  --background: 0 0% 100%;
+  /* Soft Mint / Light Green (Background): #E9F7F3 -> 163 41% 94% */
+  --background: 163 41% 94%;
   
-  /* Text Primary: #1F1F1F -> 0 0% 12% */
+  /* Dark Gray / Almost Black (Body Text): #1F1F1F -> 0 0% 12% */
   --foreground: 0 0% 12%;
   
-  /* Card: #FFFFFF -> 0 0% 100% */
+  /* White (Cards): #FFFFFF -> 0 0% 100% */
   --card: 0 0% 100%;
-  /* Card Foreground: #1F1F1F */
   --card-foreground: 0 0% 12%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 222 47% 11%;
+  --popover-foreground: 0 0% 12%;
   
-  /* Muted: Slate 100 */
-  --muted: 210 40% 96.1%;
-  /* Muted Foreground: Slate 500 */
-  --muted-foreground: 215 16% 47%;
+  /* Light Gray (Secondary Backgrounds): #F2F2F2 -> 0 0% 95% */
+  --muted: 0 0% 95%;
+  /* Muted Text: Keeping a lighter gray for contrast against dark gray */
+  --muted-foreground: 0 0% 40%;
   
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222 47% 11%;
+  --accent: 0 0% 95%; /* Light Gray as accent base */
+  --accent-foreground: 168 76% 25%; /* Dark Green on accent */
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  /* Border: Slate 200 */
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222 47% 11%;
+  /* Border: #E5E5E5 (Slightly darker than F2F2F2) */
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 168 62% 47%;
 }
 
 @layer base {
@@ -87,10 +84,11 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+  /* Headings use the Dark Green Brand Color (#0F6F5C) */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading tracking-tight text-[hsl(var(--foreground))];
+    @apply font-heading tracking-tight text-secondary;
   }
   p {
-    @apply text-[hsl(var(--card-foreground))];
+    @apply text-foreground;
   }
 }

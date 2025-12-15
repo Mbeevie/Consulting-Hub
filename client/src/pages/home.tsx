@@ -12,44 +12,44 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImage} 
-            alt="Consulting Team" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10 pt-20">
-          <div className="max-w-3xl animate-in slide-in-from-bottom-5 duration-700 fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold font-heading leading-[1.1] mb-6 tracking-tight">
-              Evidence-Based <br/>
-              <span className="text-secondary">Strategic Impact.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-10 leading-relaxed max-w-2xl">
-              We partner with organizations to design, monitor, and evaluate development programs that create lasting change across Africa.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/contact" 
-                className={cn(
-                  buttonVariants({ size: "lg" }), 
-                  "bg-secondary text-secondary-foreground hover:bg-secondary/90 font-bold rounded-full h-14 px-8 text-lg hover:no-underline"
-                )}
-              >
-                Partner With Us
-              </Link>
-              <Link 
-                href="/services" 
-                className={cn(
-                  buttonVariants({ size: "lg", variant: "outline" }), 
-                  "border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold rounded-full h-14 px-8 text-lg hover:no-underline"
-                )}
-              >
-                Explore Services
-              </Link>
+      <section className="relative min-h-[90vh] flex items-center bg-background text-foreground overflow-hidden">
+        <div className="container mx-auto px-4 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl animate-in slide-in-from-bottom-5 duration-700 fade-in">
+              <h1 className="text-5xl md:text-7xl font-bold font-heading leading-[1.1] mb-6 tracking-tight text-primary">
+                Evidence-Based <br/>
+                <span className="text-secondary">Strategic Impact.</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed max-w-2xl">
+                We partner with organizations to design, monitor, and evaluate development programs that create lasting change across Africa.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link 
+                  href="/contact" 
+                  className={cn(
+                    buttonVariants({ size: "lg" }), 
+                    "bg-primary text-primary-foreground hover:bg-primary/90 font-bold rounded-full h-14 px-8 text-lg hover:no-underline"
+                  )}
+                >
+                  Partner With Us
+                </Link>
+                <Link 
+                  href="/services" 
+                  className={cn(
+                    buttonVariants({ size: "lg", variant: "outline" }), 
+                    "border-input text-foreground hover:bg-accent hover:text-accent-foreground font-semibold rounded-full h-14 px-8 text-lg hover:no-underline"
+                  )}
+                >
+                  Explore Services
+                </Link>
+              </div>
+            </div>
+            <div className="relative h-[500px] hidden lg:block rounded-2xl overflow-hidden shadow-2xl animate-in slide-in-from-right-5 duration-700 fade-in delay-200">
+               <img 
+                src={heroImage} 
+                alt="Consulting Team" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

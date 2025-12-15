@@ -38,44 +38,46 @@
 }
 
 :root {
-  /* Primary: #2EC4A6 -> 168 62% 47% */
-  --primary: 168 62% 47%;
-  --primary-foreground: 0 0% 100%;
-
-  /* Primary Dark: #0F6F5C -> 168 76% 25% */
-  /* Using as Secondary/Accent for contrast */
-  --secondary: 168 76% 25%;
-  --secondary-foreground: 0 0% 100%;
-
-  /* Background: #E9F7F3 -> 163 41% 94% */
-  --background: 163 41% 94%;
+  /* Simple Corporate Palette */
   
-  /* Text Primary: #1F1F1F -> 0 0% 12% */
-  --foreground: 0 0% 12%;
+  /* Primary: Deep Navy #0F172A */
+  --primary: 222 47% 11%;
+  --primary-foreground: 210 40% 98%;
+
+  /* Secondary: Corporate Blue #3B82F6 (Standard Blue) used for accents/highlights */
+  /* Or maybe a more muted Slate for secondary elements to keep it "simple" */
+  --secondary: 210 40% 96.1%; /* Slate 100 - Light background for secondary buttons */
+  --secondary-foreground: 222 47% 11%;
+
+  /* Background: White */
+  --background: 0 0% 100%;
   
-  /* Surface/Card: #FFFFFF -> 0 0% 100% */
+  /* Text Primary: Slate 900 */
+  --foreground: 222 47% 11%;
+  
+  /* Card: White */
   --card: 0 0% 100%;
-  
-  /* Text Secondary: #5F6F6A -> 162 8% 40% */
-  --card-foreground: 162 8% 40%;
+  /* Card Foreground: Slate 700 */
+  --card-foreground: 215 25% 27%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 12%;
+  --popover-foreground: 222 47% 11%;
   
-  /* Muted backgrounds using slightly darker/lighter variants of base colors */
-  --muted: 163 20% 90%;
-  --muted-foreground: 162 8% 40%;
+  /* Muted: Slate 100 */
+  --muted: 210 40% 96.1%;
+  /* Muted Foreground: Slate 500 */
+  --muted-foreground: 215 16% 47%;
   
-  --accent: 163 41% 90%; /* Slightly darker than background */
-  --accent-foreground: 168 76% 25%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222 47% 11%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  /* Borders: Light grey-green or Text Secondary with low opacity */
-  --border: 162 8% 85%;
-  --input: 162 8% 85%;
-  --ring: 168 62% 47%;
+  /* Border: Slate 200 */
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222 47% 11%;
 }
 
 @layer base {

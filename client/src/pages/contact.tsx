@@ -42,10 +42,10 @@ export default function Contact() {
   return (
     <div className="bg-background min-h-screen flex flex-col">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground py-20">
+      <div className="bg-background text-foreground py-20 border-b border-border">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">Contact Us</h1>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-primary">Contact Us</h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to start a project or have a question? We'd love to hear from you.
           </p>
         </div>

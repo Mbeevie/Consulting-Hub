@@ -46,10 +46,10 @@ export default function Services() {
   return (
     <div className="bg-background min-h-screen">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground py-20">
+      <div className="bg-background text-foreground py-20 border-b border-border">
         <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">Our Services</h1>
-          <p className="text-xl text-primary-foreground/80">
+          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-primary">Our Services</h1>
+          <p className="text-xl text-muted-foreground">
             Holistic consulting solutions tailored to the unique challenges of development in Africa.
           </p>
         </div>

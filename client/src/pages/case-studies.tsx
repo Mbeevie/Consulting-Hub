@@ -84,10 +84,10 @@ export default function CaseStudies() {
   return (
     <div className="bg-background min-h-screen pb-20">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground py-20 mb-12">
+      <div className="bg-background text-foreground py-20 mb-12 border-b border-border">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">Our Impact</h1>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-primary">Our Impact</h1>
+          <p className="text-xl text-muted-foreground max-w-2xl">
             Explore our portfolio of projects driving sustainable development across the continent.
           </p>
         </div>

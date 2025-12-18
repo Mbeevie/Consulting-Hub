@@ -6,6 +6,8 @@ import researchImage from "@assets/stock_images/african_agricultural_4a8cedaa.jp
 import meImage from "@assets/stock_images/data_analysis_monito_5040bc45.jpg";
 import facilitationImage from "@assets/stock_images/corporate_workshop_f_307344bf.jpg";
 import designImage from "@assets/stock_images/design_strategy_thin_307f71ec.jpg";
+import ecopulseimage from "@assets/stock_images/EcoPulse.png";
+import mitigating from "@assets/stock_images/mitigating.png";
 
 type Category = "All" | "Research" | "M&E" | "Capacity Building" | "Design Strategy";
 
@@ -15,61 +17,34 @@ const projects = [
     title: "Youth Livelihood Program Evaluation",
     category: "M&E",
     description: "Comprehensive midterm evaluation of a multi-country youth employment initiative reaching 50,000+ beneficiaries.",
-    stats: "50,000+ youth reached",
+    stats: "3,000+ youth reached",
     location: "Kenya & Uganda",
     date: "2023",
     image: meImage
   },
   {
-    id: 2,
-    title: "Agricultural Value Chain Assessment",
-    category: "Research",
-    description: "In-depth analysis of smallholder farmer integration into commercial agricultural value chains.",
-    stats: "12 value chains mapped",
-    location: "Tanzania",
+    id: 7,
+    title: "EcoPulse: A Civic-Tech Ecosystem for Air Quality Action",
+    category: "M&E",
+    description: "To empower communities with real-time air-quality data, AI-driven health guidance, and a public accountability system to enable timely protective actions, drive evidence-based government interventions and generate epidemiology data  to inform scalable solutions against air pollution.",
+    stats: "5,000+ youth reached",
+    location: "Kenya & Uganda",
     date: "2023",
-    image: researchImage
+    image: ecopulseimage 
   },
   {
-    id: 3,
-    title: "Health Systems Strengthening",
-    category: "Capacity Building",
-    description: "Designed and delivered training for 200+ health workers on community-based healthcare delivery.",
-    stats: "200+ workers trained",
-    location: "Rwanda",
-    date: "2022",
-    image: facilitationImage
-  },
-  {
-    id: 4,
-    title: "Financial Inclusion Strategy",
-    category: "Design Strategy",
-    description: "Human-centered design process to develop new digital financial products for rural women.",
-    stats: "3 prototypes piloted",
-    location: "Ethiopia",
+    id: 1,
+    title: "Mitigating air pollution health risks",
+    category: "M&E",
+    description: "Air pollution is a major contributor to non-communicable diseases (NCDs). Communities unknowingly generate air pollutants through their daily activities, lack air quality data despite noticing changes in the quality of air and are unaware of the catastrophic effects of air pollution on their health and well-being. The project aims to empower vulnerable communities through an air pollution self-triage and educational tool that integrates air quality data, symptoms and social vulnerability risk factors.",
+    stats: "40,000+ youth reached",
+    location: "Kenya & Uganda",
     date: "2023",
-    image: designImage
-  },
-  {
-    id: 5,
-    title: "Education Policy Review",
-    category: "Research",
-    description: "Review of national education policies to identify gaps in vocational training alignment.",
-    stats: "National policy impact",
-    location: "Kenya",
-    date: "2022",
-    image: researchImage
-  },
-  {
-    id: 6,
-    title: "Community Resilience Workshop",
-    category: "Facilitation", // Mapped to Capacity Building for filter simplicity if needed, or keep separate
-    description: "Facilitated multi-stakeholder dialogue on climate resilience in pastoralist communities.",
-    stats: "15 communities engaged",
-    location: "Somalia",
-    date: "2023",
-    image: facilitationImage
-  }
+    image: mitigating
+  },    
+ 
+  
+  
 ];
 
 export default function CaseStudies() {

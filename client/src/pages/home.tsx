@@ -7,6 +7,10 @@ import heroImage from "@assets/stock_images/professional_diverse_5895f23c.jpg";
 import researchImage from "@assets/stock_images/african_agricultural_4a8cedaa.jpg";
 import meImage from "@assets/stock_images/data_analysis_monito_5040bc45.jpg";
 import facilitationImage from "@assets/stock_images/corporate_workshop_f_307344bf.jpg";
+import home from "@assets/stock_images/home.png";
+import ecopulseimage from "@assets/stock_images/EcoPulse.png";
+import mitigating from "@assets/stock_images/mitigating.png";
+
 
 export default function Home() {
   return (
@@ -46,7 +50,7 @@ export default function Home() {
             </div>
             <div className="relative h-[500px] hidden lg:block rounded-2xl overflow-hidden shadow-2xl animate-in slide-in-from-right-5 duration-700 fade-in delay-200">
                <img 
-                src={heroImage} 
+                src={home} 
                 alt="Consulting Team" 
                 className="w-full h-full object-cover"
               />
@@ -71,7 +75,7 @@ export default function Home() {
               title="Research & Strategy" 
               description="Data-driven insights to inform policy, program design, and strategic decision-making."
               icon={<Lightbulb className="w-10 h-10 text-secondary" />}
-              image={researchImage}
+              image={mitigating}
             />
             <ServiceCard 
               title="Monitoring & Evaluation" 
@@ -83,7 +87,7 @@ export default function Home() {
               title="Capacity Building" 
               description="Empowering teams and communities through tailored training and institutional strengthening."
               icon={<Users className="w-10 h-10 text-secondary" />}
-              image={facilitationImage}
+              image={ecopulseimage}
             />
           </div>
           
@@ -134,7 +138,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl transform rotate-3" />
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src={facilitationImage} 
+                  src={ecopulseimage} 
                   alt="Team collaboration" 
                   className="w-full h-auto object-cover"
                 />

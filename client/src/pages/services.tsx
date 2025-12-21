@@ -130,7 +130,7 @@ export default function Services() {
                 "bg-primary text-primary-foreground hover:bg-primary/90 font-bold rounded-full px-8 hover:no-underline"
               )}
             >
-              Get a Quote
+              Get in Touch
             </Link>
           </div>
         </div>

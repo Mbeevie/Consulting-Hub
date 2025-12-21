@@ -12,7 +12,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/case-studies", label: "Case Studies" },
-    { href: "/contact", label: "Contact" },
+   
   ];
 
   return (
@@ -25,10 +25,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               M
             </div>
             <span className="text-xl font-bold text-primary font-heading tracking-tight">
-              MWIMA <span className="font-normal text-muted-foreground">Consulting</span>
+              MWIMA -<span className="font-normal text-muted-foreground">Consulting</span>
             </span>
           </Link>
-
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (

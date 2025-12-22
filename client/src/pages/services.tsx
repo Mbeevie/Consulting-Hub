@@ -8,36 +8,31 @@ export default function Services() {
   const services = [
     {
       id: "research",
-      title: "Research & Analysis",
-      icon: <Search className="w-8 h-8" />,
+      title: "Research & Analysis",     
       description: "We conduct rigorous mixed-methods research to provide evidence-based insights. From baseline surveys to market assessments, our data informs critical decision-making.",
       features: ["Baseline & Endline Surveys", "Market Systems Analysis", "Policy Research", "Feasibility Studies"]
     },
     {
       id: "design",
-      title: "Design Strategy",
-      icon: <PenTool className="w-8 h-8" />,
+      title: "Design Strategy",      
       description: "Using Human-Centered Design (HCD) principles, we co-create solutions with communities and stakeholders to ensure interventions are relevant, usable, and sustainable.",
       features: ["Program Co-creation", "User Experience Research", "Prototyping & Testing", "Service Design"]
     },
     {
       id: "facilitation",
-      title: "Facilitation",
-      icon: <Presentation className="w-8 h-8" />,
+      title: "Facilitation",     
       description: "Our expert facilitators manage complex multi-stakeholder dialogues, strategic planning workshops, and validation meetings to drive consensus and action.",
       features: ["Strategic Planning", "Stakeholder Dialogue", "Validation Workshops", "Team Retreats"]
     },
     {
       id: "me",
-      title: "Monitoring & Evaluation",
-      icon: <BarChart className="w-8 h-8" />,
+      title: "Monitoring & Evaluation",      
       description: "We design robust M&E frameworks and conduct independent evaluations to measure impact, accountability, and learning throughout the project lifecycle.",
       features: ["M&E Framework Design", "Mid-term & Final Evaluations", "Impact Assessments", "Third-party Monitoring"]
     },
     {
       id: "capacity",
-      title: "Capacity Building",
-      icon: <Users className="w-8 h-8" />,
+      title: "Capacity Building",      
       description: "We strengthen institutions and individuals through tailored training programs, mentorship, and organizational development support.",
       features: ["Training of Trainers (ToT)", "Curriculum Development", "Organizational Assessment", "Mentorship Programs"]
     },
@@ -60,10 +55,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <Card key={service.id} className="border-t-4 border-t-secondary hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="pb-2">
-                <div className="w-16 h-16 rounded-lg bg-primary/5 flex items-center justify-center text-primary mb-4">
-                  {service.icon}
-                </div>
+              <CardHeader className="pb-2">                
                 <CardTitle className="text-2xl font-bold text-primary font-heading">
                   {service.title}
                 </CardTitle>

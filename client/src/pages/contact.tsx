@@ -81,19 +81,8 @@ export default function Contact() {
 
             <div className="space-y-8">
               <div className="flex items-start gap-5">
-                <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-1">Our Office</h3>
-                  <p className="text-muted-foreground">
-                    123 Innovation Drive, Westlands
-                    <br />
-                    Nairobi, Kenya
-                  </p>
-                </div>
+                            
               </div>
-
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary">
                   <Mail className="w-6 h-6" />
@@ -115,23 +104,9 @@ export default function Contact() {
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center text-primary">
                   <Phone className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg mb-1">Call Us</h3>
-                  <p className="text-muted-foreground mb-1">
-                    Mon–Fri from 8am to 5pm
-                  </p>
-                  <a
-                    href="tel:+254123456789"
-                    className="text-primary font-medium hover:underline"
-                  >
-                    +254 123 456 789
-                  </a>
-                </div>
+                </div>              
               </div>
-            </div>
-
-            {/* -------------------- Hours -------------------- */}
+            </div>           
             <div className="mt-12 p-8 bg-muted rounded-2xl border">
               <h3 className="font-bold text-lg mb-3">Consulting Hours</h3>
               <div className="space-y-2 text-sm">
@@ -149,9 +124,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* -------------------- Contact Form -------------------- */}
+          </div>        
           <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg border">
             <h2 className="text-2xl font-bold text-primary mb-6">
               Send us a Message

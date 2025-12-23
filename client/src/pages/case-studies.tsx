@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 import meImage from "@assets/stock_images/case-2.webp";
-import ecopulseimage from "@assets/stock_images/case-1.webp";
+import ecopulseimage from "@assets/stock_images/eco-read.png";
 
 type Category =
   | "All"

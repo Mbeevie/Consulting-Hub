@@ -3,7 +3,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import home from "@assets/stock_images/hero.jpg";
-import ecopulseimage from "@assets/stock_images/monitoring.jpg";
+import ecopulseimage from "@assets/stock_images/capacity.jpg";
 import mitigating from "@assets/stock_images/research.jpg";
 import meImage from "@assets/stock_images/data_analysis_monito_5040bc45.jpg";
 

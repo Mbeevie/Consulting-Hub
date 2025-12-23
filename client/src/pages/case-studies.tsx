@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-import meImage from "@assets/stock_images/data_analysis_monito_5040bc45.jpg";
-import ecopulseimage from "@assets/stock_images/research.jpg";
+import meImage from "@assets/stock_images/case-2.webp";
+import ecopulseimage from "@assets/stock_images/case-1.webp";
 
 type Category =
   | "All"

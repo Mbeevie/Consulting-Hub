@@ -137,18 +137,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h4 className="font-bold text-lg mb-6 text-primary">Contact Us</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary shrink-0" />
-                  <span>123 Innovation Drive,<br/>Nairobi, Kenya</span>
-                </li>
+                
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary shrink-0" />
                   <a href="mailto:info@mwimaconsulting.com" className="hover:text-primary">info@mwimaconsulting.com</a>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary shrink-0" />
-                  <a href="tel:+254123456789" className="hover:text-primary">+254 123 456 789</a>
-                </li>
+               
               </ul>
             </div>
           </div>
